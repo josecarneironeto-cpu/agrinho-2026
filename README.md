@@ -143,19 +143,6 @@ O arquivo JS é organizado em **11 módulos funcionais**:
 
 ---
 
-## 🤖 Uso de Inteligência Artificial
-
-> ⚠️ Este projeto utilizou **IA generativa (Claude, da Anthropic)** como ferramenta auxiliar na geração inicial de código HTML, CSS e JavaScript, e no apoio à redação de conteúdo textual.
->
-> Todo o código gerado foi **revisado, adaptado, testado e curado pelo autor**, garantindo compreensão plena de cada funcionalidade implementada, conformidade com o edital e originalidade do projeto.
->
-> **Prompts utilizados (resumo):**
-> - Geração da estrutura HTML semântica com todas as seções planejadas
-> - Geração do CSS com sistema de design (variáveis, responsividade, animações)
-> - Geração dos módulos JavaScript (partículas, quiz, simulador, lightbox)
-> - Revisão e correção de acessibilidade (atributos ARIA)
-
----
 
 ## 📄 Conformidade com o Edital
 

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agrinho 2026 — Agro Forte, Futuro Sustentável: equilíbrio entre produção e meio ambiente. Projeto front-end explorando sustentabilidade no agronegócio brasileiro.">
+    <meta name="keywords" content="Agrinho 2026, sustentabilidade, agronegócio, tecnologia rural, meio ambiente, agricultura de precisão, Paraná">
+    <meta name="author" content="Agrinho 2026 — Programação Front-End">
+    <meta property="og:title" content="Agrinho 2026 — Agro Forte, Futuro Sustentável">
+    <meta property="og:description" content="Tecnologia e natureza trabalhando juntas pelo futuro do agro.">
+    <meta property="og:type" content="website">
+    <title>Agrinho 2026 — Agro Forte, Futuro Sustentável</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVEGAÇÃO ==================== -->
+    <nav id="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Voltar ao início">
+                <div class="logo-mark" aria-hidden="true"></div>
+                <span class="logo-text">Agrinho <em>2026</em></span>
+            </a>
+
+            <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="#sobre"      class="nav-link" data-section="sobre">Problema</a></li>
+                <li><a href="#solucoes"   class="nav-link" data-section="solucoes">Soluções</a></li>
+                <li><a href="#simulador"  class="nav-link" data-section="simulador">Simulador</a></li>
+                <li><a href="#timeline"   class="nav-link" data-section="timeline">Timeline</a></li>
+                <li><a href="#galeria"    class="nav-link" data-section="galeria">Galeria</a></li>
+                <li><a href="#quiz"       class="nav-link" data-section="quiz">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" aria-label="Apresentação principal">
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge" data-reveal>
+                <span class="badge-dot" aria-hidden="true"></span>
+                <span>Concurso Agrinho 2026</span>
+            </div>
+
+            <h1 class="hero-title" data-reveal>
+                Agro <em>Forte</em>,<br>
+                Futuro <em>Sustentável</em>
+            </h1>
+
+            <p class="hero-subtitle" data-reveal>
+                Tecnologia e natureza trabalhando juntas<br>
+                pelo futuro do agro.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+                <a href="#sobre" class="btn btn-primary">
+                    <span>Descobrir Mais</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#simulador" class="btn btn-ghost">
+                    <span>Montar Fazenda</span>
+                </a>
+            </div>
+
+            <div class="hero-stats" data-reveal>
+                <div class="hero-stat">
+                    <div class="hero-stat-inner">
+                        <span class="stat-number" data-count="70">0</span>
+                        <span class="stat-suffix">%</span>
+                    </div>
+                    <span class="stat-label">água doce usada no agro</span>
+                </div>
+                <div class="hero-stat-divider" aria-hidden="true"></div>
+                <div class="hero-stat">
+                    <div class="hero-stat-inner">
+                        <span class="stat-number" data-count="1200">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">tecnologias rurais ativas</span>
+                </div>
+                <div class="hero-stat-divider" aria-hidden="true"></div>
+                <div class="hero-stat">
+                    <div class="hero-stat-inner">
+                        <span class="stat-number" data-count="40">0</span>
+                        <span class="stat-suffix">%</span>
+                    </div>
+                    <span class="stat-label">redução possível de emissões</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#sobre" class="hero-scroll-indicator" aria-label="Role para baixo">
+            <div class="scroll-line"></div>
+        </a>
+    </section>
+
+    <!-- ==================== O PROBLEMA ==================== -->
+    <section id="sobre" aria-labelledby="sobre-title">
+        <div class="container">
+            <header class="section-header" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    O Desafio
+                </span>
+                <h2 id="sobre-title" class="section-title">
+                    O agro alimenta o mundo,<br>mas deixa <em>marcas profundas</em>
+                </h2>
+                <p class="section-desc">
+                    O crescimento da produção agrícola trouxe prosperidade — mas também desafios urgentes que precisamos enfrentar antes que seja tarde demais.
+                </p>
+            </header>
+
+<div class="stats-grid">
+                <article class="stat-card" data-reveal>
+                    <div class="stat-card-icon" aria-hidden="true">💧</div>
+                    <div class="stat-card-number">
+                        <span class="counter" data-target="70">0</span>%
+                    </div>
+                    <h3 class="stat-card-title">Consumo de Água</h3>
+                    <p class="stat-card-desc">da água doce mundial é consumida pela agricultura, sendo grande parte desperdiçada por técnicas ineficientes.</p>
+                </article>
+
+                <article class="stat-card" data-reveal>
+                    <div class="stat-card-icon" aria-hidden="true">🔥</div>
+                    <div class="stat-card-number">
+                        <span class="counter" data-target="5">0</span>M
+                    </div>
+                    <h3 class="stat-card-title">Hectares Queimados</h3>
+                    <p class="stat-card-desc">por ano no Brasil por queimadas, liberando toneladas de CO₂ e destruindo ecossistemas inteiros.</p>
+                </article>
+
+                <article class="stat-card" data-reveal>
+                    <div class="stat-card-icon" aria-hidden="true">🌳</div>
+                    <div class="stat-card-number">
+                        <span class="counter" data-target="12">0</span>M
+                    </div>
+                    <h3 class="stat-card-title">Hectares Desmatados</h3>
+                    <p class="stat-card-desc">de floresta perdidos por ano no mundo, impactando biodiversidade e o equilíbrio climático global.</p>
+                </article>
+
+                <article class="stat-card" data-reveal>
+                    <div class="stat-card-icon" aria-hidden="true">☁️</div>
+                    <div class="stat-card-number">
+                        <span class="counter" data-target="25">0</span>%
+                    </div>
+                    <h3 class="stat-card-title">Emissões Globais</h3>
+                    <p class="stat-card-desc">dos gases do efeito estufa gerados pelo setor agropecuário — principal contribuinte para o aquecimento global.</p>
+                </article>
+
+                <article class="stat-card" data-reveal>
+                    <div class="stat-card-icon" aria-hidden="true">🧪</div>
+                    <div class="stat-card-number">
+                        <span class="counter" data-target="3">0</span>B kg
+                    </div>
+                    <h3 class="stat-card-title">Agrotóxicos/Ano</h3>
+                    <p class="stat-card-desc">utilizados anualmente no mundo, contaminando solo, rios e lençóis freáticos com consequências graves à saúde.</p>
+                </article>
+
+                <article class="stat-card stat-card-accent" data-reveal>
+                    <div class="stat-card-icon" aria-hidden="true">🌍</div>
+                    <div class="stat-card-number">
+                        <span class="counter" data-target="100">0</span>%
+                    </div>
+                    <h3 class="stat-card-title">Nosso Potencial</h3>
+                    <p class="stat-card-desc">Com tecnologia, inovação e vontade coletiva, podemos transformar o agro em sinônimo de sustentabilidade.</p>
+                </article>
+            </div>
+
+            <div class="chart-wrapper" data-reveal>
+                <h3 class="chart-title">📊 Produção Agrícola Brasileira × Impacto Ambiental (2022–2025)</h3>
+                <p class="chart-subtitle">Comparativo entre crescimento da produção, área desmatada e emissões de CO₂</p>
+                <div class="chart-canvas-container">
+                    <canvas id="productionChart" aria-label="Gráfico de produção agrícola versus impacto ambiental de 2022 a 2025" role="img"></canvas>
+                </div>
+                <p class="chart-source">Fontes: Embrapa, IBGE, MapBiomas — dados aproximados para fins didáticos</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== SOLUÇÕES ==================== -->
+    <section id="solucoes" aria-labelledby="solucoes-title">
+        <div class="container">
+            <header class="section-header" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Inovação
+                </span>
+                <h2 id="solucoes-title" class="section-title">
+                    Soluções que <em>transformam</em><br>o campo do futuro
+                </h2>
+                <p class="section-desc">
+                    A tecnologia chegou ao campo para ficar. Conheça as inovações que estão redefinindo a relação entre produção e natureza.
+                </p>
+            </header>
+
+            <div class="solutions-grid">
+                <!-- Card Irrigação -->
+                <article class="solution-card" data-reveal data-card="0">
+                    <div class="solution-card-inner">
+                        <div class="solution-card-front">
+                            <div class="solution-glow" aria-hidden="true"></div>
+                            <div class="solution-icon" aria-hidden="true">💧</div>
+                            <h3>Irrigação Inteligente</h3>
+                            <p>Sistemas de gotejamento e sensores de umidade reduzem o consumo de água em até 50%.</p>
+                            <button class="btn-expand" aria-label="Ver mais sobre irrigação inteligente">
+                                Ver detalhes
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                        <div class="solution-card-back" aria-hidden="true">
+                            <h3>Irrigação Inteligente</h3>
+                            <ul class="solution-list">
+                                <li>Economia de até 50% de água</li>
+                                <li>Sensores de umidade do solo</li>
+                                <li>Automação integrada por IoT</li>
+                                <li>Redução de custos operacionais</li>
+                                <li>Maior produtividade por hectare</li>
+                            </ul>
+                            <button class="btn-expand btn-back" aria-label="Voltar">← Voltar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card Drones -->
+                <article class="solution-card" data-reveal data-card="1">
+                    <div class="solution-card-inner">
+                        <div class="solution-card-front">
+                            <div class="solution-glow" aria-hidden="true"></div>
+                            <div class="solution-icon" aria-hidden="true">🚁</div>
+                            <h3>Drones Agrícolas</h3>
+                            <p>Monitoramento aéreo e pulverização precisa reduzem uso de agrotóxicos em até 70%.</p>
+                            <button class="btn-expand" aria-label="Ver mais sobre drones agrícolas">
+                                Ver detalhes
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                        <div class="solution-card-back" aria-hidden="true">
+                            <h3>Drones Agrícolas</h3>
+                            <ul class="solution-list">
+                                <li>Redução de 70% de agrotóxicos</li>
+                                <li>Mapeamento NDVI das plantações</li>
+                                <li>Detecção precoce de pragas</li>
+                                <li>Pulverização centimétrica</li>
+                                <li>Menor impacto ao solo</li>
+                            </ul>
+                            <button class="btn-expand btn-back" aria-label="Voltar">← Voltar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card Solar -->
+                <article class="solution-card" data-reveal data-card="2">
+                    <div class="solution-card-inner">
+                        <div class="solution-card-front">
+                            <div class="solution-glow" aria-hidden="true"></div>
+                            <div class="solution-icon" aria-hidden="true">☀️</div>
+                            <h3>Energia Solar Rural</h3>
+                            <p>Painéis solares em propriedades rurais geram energia limpa e reduzem custos em 80%.</p>
+                            <button class="btn-expand" aria-label="Ver mais sobre energia solar">
+                                Ver detalhes
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                        <div class="solution-card-back" aria-hidden="true">
+                            <h3>Energia Solar Rural</h3>
+                            <ul class="solution-list">
+                                <li>Redução de 80% na conta de energia</li>
+                                <li>Energia 100% renovável e limpa</li>
+                                <li>Retorno do investimento em 4-6 anos</li>
+                                <li>Zero emissões operacionais</li>
+                                <li>Excedente pode ser vendido à rede</li>
+                            </ul>
+                            <button class="btn-expand btn-back" aria-label="Voltar">← Voltar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card IoT -->
+                <article class="solution-card" data-reveal data-card="3">
+                    <div class="solution-card-inner">
+                        <div class="solution-card-front">
+                            <div class="solution-glow" aria-hidden="true"></div>
+                            <div class="solution-icon" aria-hidden="true">📡</div>
+                            <h3>Sensores IoT</h3>
+                            <p>Internet das Coisas conecta a fazenda inteira, monitorando solo, clima e produção em tempo real.</p>
+                            <button class="btn-expand" aria-label="Ver mais sobre sensores IoT">
+                                Ver detalhes
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                        <div class="solution-card-back" aria-hidden="true">
+                            <h3>Sensores IoT no Campo</h3>
+                            <ul class="solution-list">
+                                <li>Monitoramento 24/7 em tempo real</li>
+                                <li>Análise preditiva de colheitas</li>
+                                <li>Alertas automáticos de pragas</li>
+                                <li>Integração com satélites</li>
+                                <li>Big Data agropecuário</li>
+                            </ul>
+                            <button class="btn-expand btn-back" aria-label="Voltar">← Voltar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card Reflorestamento -->
+                <article class="solution-card" data-reveal data-card="4">
+                    <div class="solution-card-inner">
+                        <div class="solution-card-front">
+                            <div class="solution-glow" aria-hidden="true"></div>
+                            <div class="solution-icon" aria-hidden="true">🌲</div>
+                            <h3>Reflorestamento</h3>
+                            <p>Sistemas agroflorestais integram produção e preservação, recuperando áreas degradadas e sequestrando carbono.</p>
+                            <button class="btn-expand" aria-label="Ver mais sobre reflorestamento">
+                                Ver detalhes
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                        <div class="solution-card-back" aria-hidden="true">
+                            <h3>Reflorestamento Produtivo</h3>
+                            <ul class="solution-list">
+                                <li>Recuperação de áreas degradadas</li>
+                                <li>Sistemas Agroflorestais (SAF)</li>
+                                <li>Sequestro de carbono atmosférico</li>
+                                <li>Renda extra para o produtor</li>
+                                <li>Preservação da biodiversidade</li>
+                            </ul>
+                            <button class="btn-expand btn-back" aria-label="Voltar">← Voltar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card Precisão -->
+                <article class="solution-card" data-reveal data-card="5">
+                    <div class="solution-card-inner">
+                        <div class="solution-card-front">
+                            <div class="solution-glow" aria-hidden="true"></div>
+                            <div class="solution-icon" aria-hidden="true">🛰️</div>
+                            <h3>Agricultura de Precisão</h3>
+                            <p>Satélites e IA otimizam plantio, colheita e insumos com precisão milimétrica, reduzindo desperdício.</p>
+                            <button class="btn-expand" aria-label="Ver mais sobre agricultura de precisão">
+                                Ver detalhes
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                        <div class="solution-card-back" aria-hidden="true">
+                            <h3>Agricultura de Precisão</h3>
+                            <ul class="solution-list">
+                                <li>GPS centimétrico em máquinas</li>
+                                <li>Mapas de produtividade por talhão</li>
+                                <li>Aplicação variável de insumos</li>
+                                <li>IA para previsão de safras</li>
+                                <li>Redução de 30% nos custos totais</li>
+                            </ul>
+                            <button class="btn-expand btn-back" aria-label="Voltar">← Voltar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SIMULADOR ==================== -->
+    <section id="simulador" aria-labelledby="sim-title">
+        <div class="container">
+            <header class="section-header" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Interativo
+                </span>
+                <h2 id="sim-title" class="section-title">
+                    Monte sua <em>Fazenda</em><br>Sustentável
+                </h2>
+                <p class="section-desc">
+                    Escolha as tecnologias e práticas da sua fazenda e veja o índice de sustentabilidade calculado em tempo real.
+                </p>
+            </header>
+
+            <div class="simulator-wrapper" data-reveal>
+                <!-- Painel de Controles -->
+                <div class="simulator-controls">
+                    <h3 class="sim-panel-title">⚙️ Configure sua Fazenda</h3>
+
+                    <!-- Energia -->
+                    <div class="control-group">
+                        <h4 class="control-label">⚡ Fonte de Energia</h4>
+                        <div class="control-options" role="group" aria-label="Fonte de energia">
+                            <label class="option-card">
+                                <input type="radio" name="energia" value="solar" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">☀️</span>
+                                    <span class="option-name">Solar</span>
+                                    <span class="option-pts">+30pts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="energia" value="eolica" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">🌬️</span>
+                                    <span class="option-name">Eólica</span>
+                                    <span class="option-pts">+25pts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="energia" value="rede" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">⚡</span>
+                                    <span class="option-name">Rede</span>
+                                    <span class="option-pts">+10pts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="energia" value="fossil" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">🛢️</span>
+                                    <span class="option-name">Fóssil</span>
+                                    <span class="option-pts">+0pts</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Irrigação -->
+                    <div class="control-group">
+                        <h4 class="control-label">💧 Sistema de Irrigação</h4>
+                        <div class="control-options" role="group" aria-label="Sistema de irrigação">
+                            <label class="option-card">
+                                <input type="radio" name="irrigacao" value="gotejamento" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">💧</span>
+                                    <span class="option-name">Gotejamento</span>
+                                    <span class="option-pts">+30pts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="irrigacao" value="aspersao" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">🌧️</span>
+                                    <span class="option-name">Aspersão</span>
+                                    <span class="option-pts">+20pts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="irrigacao" value="manual" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">🪣</span>
+                                    <span class="option-name">Manual</span>
+                                    <span class="option-pts">+15pts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="irrigacao" value="inundacao" class="sim-input">
+                                <span class="option-body">
+                                    <span class="option-emoji" aria-hidden="true">🌊</span>
+                                    <span class="option-name">Inundação</span>
+                                    <span class="option-pts">+5pts</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Árvores -->
+                    <div class="control-group">
+                        <h4 class="control-label">🌳 Árvores Plantadas</h4>
+                        <div class="slider-wrapper">
+                            <input type="range" id="arvores-slider" class="sim-slider sim-input" min="0" max="100" value="0" aria-label="Quantidade de árvores a plantar">
+                            <div class="slider-track-labels">
+                                <span>0</span>
+                                <span id="arvores-value" class="slider-live-val">0 árvores</span>
+                                <span>100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Poluição -->
+                    <div class="control-group">
+                        <h4 class="control-label">♻️ Redução de Poluição</h4>
+                        <div class="slider-wrapper">
+                            <input type="range" id="poluicao-slider" class="sim-slider sim-input" min="0" max="100" value="0" aria-label="Percentual de redução de poluição">
+                            <div class="slider-track-labels">
+                                <span>0%</span>
+                                <span id="poluicao-value" class="slider-live-val">0% reduzido</span>
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-full" id="calcular-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Calcular Sustentabilidade</span>
+                    </button>
+                </div>
+
+                <!-- Painel de Resultados -->
+                <div class="simulator-results" id="sim-results" aria-live="polite" aria-label="Resultados do simulador">
+                    <h3 class="sim-panel-title">🌍 Índice de Sustentabilidade</h3>
+
+                    <div class="meter-container">
+                        <div class="meter-ring" id="meter-ring" aria-hidden="true">
+                            <svg viewBox="0 0 120 120" class="meter-svg">
+                                <circle class="meter-bg-circle" cx="60" cy="60" r="52"/>
+                                <circle class="meter-progress-circle" id="meter-progress" cx="60" cy="60" r="52"
+                                    stroke-dasharray="327" stroke-dashoffset="327"/>
+                            </svg>
+                            <div class="meter-inner-content">
+                                <span class="meter-score" id="meter-score">0</span>
+                                <span class="meter-unit">/100</span>
+                            </div>
+                        </div>
+                        <p class="meter-label" id="meter-label">Configure e calcule!</p>
+                    </div>
+
+                    <div class="results-breakdown">
+                        <div class="result-item">
+                            <span class="result-name">⚡ Energia</span>
+                            <div class="result-bar-track">
+                                <div class="result-bar" id="bar-energia" style="width:0%"></div>
+                            </div>
+                            <span class="result-pts" id="pts-energia">0/30</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-name">💧 Água</span>
+                            <div class="result-bar-track">
+                                <div class="result-bar" id="bar-agua" style="width:0%"></div>
+                            </div>
+                            <span class="result-pts" id="pts-agua">0/30</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-name">🌳 Floresta</span>
+                            <div class="result-bar-track">
+                                <div class="result-bar" id="bar-floresta" style="width:0%"></div>
+                            </div>
+                            <span class="result-pts" id="pts-floresta">0/20</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-name">♻️ Poluição</span>
+                            <div class="result-bar-track">
+                                <div class="result-bar" id="bar-poluicao" style="width:0%"></div>
+                            </div>
+                            <span class="result-pts" id="pts-poluicao">0/20</span>
+                        </div>
+                    </div>
+
+                    <div class="result-message" id="result-message">
+                        <p>Faça suas escolhas no painel ao lado e clique em <strong>Calcular</strong> para ver o resultado!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TIMELINE ==================== -->
+    <section id="timeline" aria-labelledby="timeline-title">
+        <div class="container">
+            <header class="section-header" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Jornada
+                </span>
+                <h2 id="timeline-title" class="section-title">
+                    A <em>evolução</em> do campo<br>até o futuro
+                </h2>
+                <p class="section-desc">De ferramentas manuais à inteligência artificial — veja como o agro brasileiro se transformou.</p>
+            </header>
+
+            <div class="timeline-wrapper" role="list">
+                <div class="timeline-spine" aria-hidden="true"></div>
+
+                <article class="timeline-item" data-reveal role="listitem">
+                    <div class="timeline-point" aria-hidden="true">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-era">Passado — Séc. XIX</span>
+                        <h3>Agricultura Tradicional</h3>
+                        <p>Ferramentas manuais, tração animal e dependência das chuvas. O campo alimentava famílias locais com grande esforço humano e íntima relação com a natureza.</p>
+                        <div class="timeline-tags">
+                            <span>Tração animal</span>
+                            <span>Subsistência</span>
+                            <span>Rotação de culturas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item timeline-right" data-reveal role="listitem">
+                    <div class="timeline-point" aria-hidden="true">
+                        <span>2</span>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-era">Revolução Verde — 1960s</span>
+                        <h3>Mecanização e Produtividade</h3>
+                        <p>Tratores, fertilizantes sintéticos e sementes melhoradas multiplicaram a produção, mas criaram dependência química e aumentaram impactos ambientais severos.</p>
+                        <div class="timeline-tags">
+                            <span>Mecanização</span>
+                            <span>Agroquímicos</span>
+                            <span>Monocultura</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-reveal role="listitem">
+                    <div class="timeline-point" aria-hidden="true">
+                        <span>3</span>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-era">Presente — 2020s</span>
+                        <h3>Era Digital no Campo</h3>
+                        <p>Drones, GPS centimétrico, IoT e Big Data chegaram às fazendas. A agricultura de precisão otimiza recursos e começa a reverter danos com responsabilidade ambiental.</p>
+                        <div class="timeline-tags">
+                            <span>Drones</span>
+                            <span>IoT</span>
+                            <span>Big Data</span>
+                            <span>GPS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item timeline-right timeline-future" data-reveal role="listitem">
+                    <div class="timeline-point timeline-point-future" aria-hidden="true">
+                        <span>✦</span>
+                    </div>
+                    <div class="timeline-card timeline-card-future">
+                        <span class="timeline-era">Futuro — 2040+</span>
+                        <h3>Agro 100% Sustentável</h3>
+                        <p>Robôs autônomos, IA quântica, bioengenharia avançada e energia solar total. Produção abundante com impacto ambiental mínimo — o sonho que construímos hoje.</p>
+                        <div class="timeline-tags">
+                            <span>IA Quântica</span>
+                            <span>Bioengenharia</span>
+                            <span>Robótica</span>
+                            <span>Zero Carbono</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERIA ==================== -->
+    <section id="galeria" aria-labelledby="galeria-title">
+        <div class="container">
+            <header class="section-header" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Galeria
+                </span>
+                <h2 id="galeria-title" class="section-title">
+                    O agro <em>sustentável</em><br>em imagens
+                </h2>
+                <p class="section-desc">Clique para ver cada tecnologia em destaque</p>
+            </header>
+
+            <div class="gallery-grid" role="list">
+                <button class="gallery-item" data-reveal data-gallery-index="0" role="listitem" aria-label="Ver: Irrigação Inteligente">
+                    <div class="gallery-visual gv-1" aria-hidden="true"></div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">💧 Irrigação Inteligente</span>
+                    </div>
+                </button>
+
+                <button class="gallery-item" data-reveal data-gallery-index="1" role="listitem" aria-label="Ver: Energia Solar Rural">
+                    <div class="gallery-visual gv-2" aria-hidden="true"></div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">☀️ Energia Solar Rural</span>
+                    </div>
+                </button>
+
+                <button class="gallery-item gallery-item-large" data-reveal data-gallery-index="2" role="listitem" aria-label="Ver: Drones Agrícolas">
+                    <div class="gallery-visual gv-3" aria-hidden="true"></div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">🚁 Drones Agrícolas</span>
+                    </div>
+                </button>
+
+                <button class="gallery-item gallery-item-large" data-reveal data-gallery-index="3" role="listitem" aria-label="Ver: Reflorestamento">
+                    <div class="gallery-visual gv-4" aria-hidden="true"></div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">🌲 Reflorestamento</span>
+                    </div>
+                </button>
+
+                <button class="gallery-item" data-reveal data-gallery-index="4" role="listitem" aria-label="Ver: Sensores IoT">
+                    <div class="gallery-visual gv-5" aria-hidden="true"></div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">📡 Sensores IoT</span>
+                    </div>
+                </button>
+
+                <button class="gallery-item" data-reveal data-gallery-index="5" role="listitem" aria-label="Ver: Agricultura de Precisão">
+                    <div class="gallery-visual gv-6" aria-hidden="true"></div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">🛰️ Precisão</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== QUIZ ==================== -->
+    <section id="quiz" aria-labelledby="quiz-title">
+        <div class="container">
+            <header class="section-header" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Conhecimento
+                </span>
+                <h2 id="quiz-title" class="section-title">
+                    Teste seu <em>conhecimento</em><br>sobre sustentabilidade
+                </h2>
+            </header>
+
+            <div class="quiz-wrapper" data-reveal>
+                <!-- Cabeçalho do Quiz -->
+                <div class="quiz-header">
+                    <div class="quiz-progress-area">
+                        <div class="quiz-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                        </div>
+                        <span class="quiz-progress-text" id="quiz-progress-text">Questão 1 de 5</span>
+                    </div>
+                    <div class="quiz-live-score">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span id="quiz-score-live">0 pts</span>
+                    </div>
+                </div>
+
+                <!-- Área de Jogo -->
+                <div class="quiz-game-area" id="quiz-game-area">
+                    <p class="quiz-question-text" id="quiz-question-text" aria-live="polite">
+                        Carregando...
+                    </p>
+                    <div class="quiz-options-grid" id="quiz-options-grid" role="group" aria-label="Opções de resposta">
+                        <!-- Gerado por JavaScript -->
+                    </div>
+                    <div class="quiz-feedback" id="quiz-feedback" role="alert" aria-live="assertive"></div>
+                    <button class="btn btn-primary quiz-btn-next" id="quiz-btn-next">
+                        Próxima Pergunta
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Tela de Resultados -->
+                <div class="quiz-results-screen" id="quiz-results-screen" aria-live="polite">
+                    <div class="result-trophy" id="result-trophy" aria-hidden="true">🏆</div>
+                    <h3 id="quiz-result-title">Resultado!</h3>
+                    <div class="final-score">
+                        <span id="quiz-final-score">0</span>
+                        <span class="final-score-total"> / 5 acertos</span>
+                    </div>
+                    <p class="final-msg" id="quiz-final-msg"></p>
+                    <button class="btn btn-primary" id="quiz-restart-btn">
+                        🔄 Jogar Novamente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section id="transformacao" aria-labelledby="cta-title">
+        <canvas class="cta-canvas" id="cta-canvas" aria-hidden="true"></canvas>
+        <div class="container">
+            <div class="cta-inner" data-reveal>
+                <span class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Ação
+                </span>
+                <h2 id="cta-title" class="cta-headline">
+                    O futuro <em>sustentável</em><br>começa com você
+                </h2>
+                <p class="cta-body">
+                    Cada escolha importa. Cada ação transforma. O agro que alimenta o mundo pode ser também o agro que salva o planeta. A mudança começa agora — começa com você.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#hero" class="btn btn-primary btn-xl">
+                        <span>🌱 Começar a Transformação</span>
+                    </a>
+                    <a href="#simulador" class="btn btn-outline btn-xl">
+                        <span>Montar Minha Fazenda</span>
+                    </a>
+                </div>
+                <div class="cta-pillars">
+                    <div class="cta-pillar">
+                        <span class="pillar-icon" aria-hidden="true">🌱</span>
+                        <span>Plante uma ideia</span>
+                    </div>
+                    <div class="cta-pillar">
+                        <span class="pillar-icon" aria-hidden="true">💡</span>
+                        <span>Inove com tecnologia</span>
+                    </div>
+                    <div class="cta-pillar">
+                        <span class="pillar-icon" aria-hidden="true">🌍</span>
+                        <span>Preserve o planeta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="section-padding">
+    <div class="container">
+        
+        <div class="section-header" data-reveal>
+            <span class="section-subtitle">Inovação no Campo</span>
+            <h2 class="section-title">Tecnologias <span>Sustentáveis</span> Aplicadas</h2>
+            <p class="section-desc">Casos práticos de inovações tecnológicas que reduzem custos e protegem o meio ambiente no agronegócio paranaense.</p>
+        </div>
+
+        <div class="technologies" data-reveal>
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">🌾</div>
+                    <span class="tech-badge">Eficiência</span>
+                </div>
+                <h3>Sensores de Nitrogênio</h3>
+                <p>Leitura óptica em tempo real que calcula a necessidade exata de fertilizante por planta, reduzindo o desperdício químico em até 25% e evitando a contaminação do lençol freático.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">-25%</span>
+                        <span class="tech-stat-label">Desperdício</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">Real</span>
+                        <span class="tech-stat-label">Tempo de Leitura</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>Óptica</span>
+                    <span>Fertilizantes</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">⚗️</div>
+                    <span class="tech-badge tech-badge-teal">Energia</span>
+                </div>
+                <h3>Biodigestores de Resíduos</h3>
+                <p>Transformação de dejetos animais em biogás e biofertilizante de alta qualidade. Reduz drasticamente a emissão de gás metano e gera autonomia energética para pequenas e grandes propriedades.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">100%</span>
+                        <span class="tech-stat-label">Circular</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">Biogás</span>
+                        <span class="tech-stat-label">Energia Limpa</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>Reciclagem</span>
+                    <span>Autonomia</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">🛰️</div>
+                    <span class="tech-badge tech-badge-blue">Monitoramento</span>
+                </div>
+                <h3>Telemetria Avançada</h3>
+                <p>Acompanhamento via satélite do consumo de combustível e da compactação do solo por maquinários agrícolas. Garante rotas otimizadas com redução de 15% na pegada de carbono.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">-15%</span>
+                        <span class="tech-stat-label">Carbono</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">GPS</span>
+                        <span class="tech-stat-label">Rotas Inteligentes</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>Maquinário</span>
+                    <span>Satélite</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">🛸</div>
+                    <span class="tech-badge tech-badge-amber">Aplicação</span>
+                </div>
+                <h3>Drones de Pulverização</h3>
+                <p>Aplicação aérea localizada de defensivos biológicos e insumos apenas nas áreas afetadas detectadas por IA. Reduz drasticamente o desperdício e protege polinizadores locais.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">-80%</span>
+                        <span class="tech-stat-label">Uso de Água</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">Smart</span>
+                        <span class="tech-stat-label">Foco Alvo</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>Drones</span>
+                    <span>Precisão</span>
+                </div>
+            </div>
+
+        </div> ```
+
+
+        <div style="margin-top: var(--sp-12);"></div>
+
+        <div class="section-header" data-reveal>
+            <span class="section-subtitle">O Futuro Agora</span>
+            <h2 class="section-title">Inovações que já <span>existem</span><br>e transformam o campo</h2>
+            <p class="section-desc">Não é ficção científica — essas tecnologias já estão em uso no Brasil e no mundo, provando que o agro sustentável é possível hoje.</p>
+        </div>
+
+        <div class="technologies" data-reveal>
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">🔬</div>
+                    <span class="tech-badge">Mapeamento Digital</span>
+                </div>
+                <h3>SoilOptix — Mapeamento de Solo 3D</h3>
+                <p>Sensores de alta resolução gama mapeiam o solo em 3D com resolução de 1 ponto por hectare, gerando mapas detalhados de nutrientes sem necessidade de coleta manual.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">95%</span>
+                        <span class="tech-stat-label">Precisão na análise</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">60%</span>
+                        <span class="tech-stat-label">Menos fertilizante</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>3D</span>
+                    <span>Solo</span>
+                    <span>Sensores</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">🚜</div>
+                    <span class="tech-badge tech-badge-teal">Automação</span>
+                </div>
+                <h3>John Deere AutoTrac — Piloto Automático</h3>
+                <p>Sistema de piloto automático por GPS de alta precisão guia tratores com desvio máximo de 2.5cm, eliminando sobreposição de passadas e reduzindo drasticamente o desperdício de insumos.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">2.5cm</span>
+                        <span class="tech-stat-label">Precisão GPS</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">13%</span>
+                        <span class="tech-stat-label">Menos combustível</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>GPS</span>
+                    <span>IA</span>
+                    <span>Filtragem</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">💧</div>
+                    <span class="tech-badge tech-badge-blue">Irrigação</span>
+                </div>
+                <h3>Netafim — Irrigação por Gotejamento</h3>
+                <p>Pioneira mundial em gotejamento, a Netafim opera em mais de 110 países. Seus sistemas entregam água e nutrientes diretamente à raiz, com eficiência de até 95% contra 50% da irrigação convencional.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">95%</span>
+                        <span class="tech-stat-label">Eficiência de Água</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">50%</span>
+                        <span class="tech-stat-label">Mais produtividade</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>Gotejo</span>
+                    <span>Agua</span>
+                    <span>Nutrientes</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <div class="tech-icon">🛰️</div>
+                    <span class="tech-badge tech-badge-amber">Satélite</span>
+                </div>
+                <h3>Embrapa GeoInfo — Monitoramento Orbital</h3>
+                <p>Plataforma brasileira da Embrapa que usa imagens de satélite para monitorar desmatamento, queimadas, uso do solo em tempo real, disponível gratuitamente para produtores e gestores públicos.</p>
+                <div class="tech-stats">
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">100%</span>
+                        <span class="tech-stat-label">Gratuito</span>
+                    </div>
+                    <div class="tech-stat-item">
+                        <span class="tech-stat-value">BR</span>
+                        <span class="tech-stat-label">Tecnologia nacional</span>
+                    </div>
+                </div>
+                <div class="tech-tags">
+                    <span>Embrapa</span>
+                    <span>Radar</span>
+                    <span>Nuvem</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-mark" aria-hidden="true"></div>
+                    <span>Agrinho <em>2026</em></span>
+                </div>
+                <p>Agro Forte, Futuro Sustentável: equilíbrio entre produção e meio ambiente.</p>
+                <div class="footer-tech-stack" role="list" aria-label="Tecnologias utilizadas">
+                    <span role="listitem">HTML5</span>
+                    <span role="listitem">CSS3</span>
+                    <span role="listitem">JavaScript</span>
+                    <span role="listitem">Chart.js</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#sobre">O Problema</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Referências</h4>
+                <ul>
+                    <li><a href="https://www.embrapa.br" target="_blank" rel="noopener noreferrer">Embrapa</a></li>
+                    <li><a href="https://www.cnabrasil.org.br" target="_blank" rel="noopener noreferrer">CNA Brasil</a></li>
+                    <li><a href="https://www.fao.org/brasil" target="_blank" rel="noopener noreferrer">FAO — ONU</a></li>
+                    <li><a href="https://www.imaflora.org" target="_blank" rel="noopener noreferrer">Imaflora</a></li>
+                    <li><a href="https://www.seab.pr.gov.br" target="_blank" rel="noopener noreferrer">SEAB — Paraná</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Créditos</h4>
+                <div class="footer-credits-card">
+                    <p class="footer-dev-name">José Waldson Oliveira<br>Carneiro Neto</p>
+                    <p class="footer-contest-label">Concurso Agrinho 2026</p>
+                    <p class="footer-contest-label">Categoria: Programação Front-End</p>
+                    <div class="footer-tech-inline">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                Desenvolvido por
+                <strong class="footer-author">José Waldson Oliveira Carneiro Neto</strong>
+            </p>
+            <p>© 2026 Concurso Agrinho — SENAR/PR</p>
+            <p>Tema: <em>"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</em></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Fechar lightbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagem anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <div class="lightbox-stage">
+            <div class="lightbox-visual" id="lightbox-visual" aria-hidden="true"></div>
+            <div class="lightbox-caption">
+                <h3 class="lightbox-title" id="lightbox-title"></h3>
+                <p class="lightbox-desc" id="lightbox-desc"></p>
+            </div>
+        </div>
+
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Próxima imagem">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Script Principal -->
+  <script src="js/chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
